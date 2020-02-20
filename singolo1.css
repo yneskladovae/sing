@@ -48,7 +48,7 @@ body {
 
 header {
     background: #2d303a;
-    border-bottom: 6px solid #323746;
+    border-bottom: 5px solid #323746;
 }
 
 nav.nav {
@@ -66,8 +66,10 @@ h1 {
     width: 115px;
     height: 20px;
     background: url(assets//img/logo.png) no-repeat;
-    font-size: 1px;
+    font-size: 0px;
     cursor: pointer;
+    position: relative;
+    top: -1px;
 }
 
 .header_item {
@@ -84,11 +86,12 @@ ul.nav_menu li {
     font-size: 12px;
     font-weight: 700;
     list-style: none;
-    padding-left: 29px;
+    padding-left: 7px;
     text-transform: uppercase;
     position: relative;
     top: 4px;
     left: 1px;
+    letter-spacing: -0.12px;
 }
 
 ul.nav_menu li a {
@@ -105,7 +108,7 @@ ul.nav_menu li a:hover {
 
 main.slider {
     background: #f06c64;
-    height: 599px;
+    height: 600px;
     border-bottom: 6px solid #ea676b;
 }
 
@@ -128,7 +131,7 @@ img.slider_navigation.left {
 
 img.slider_navigation.right {
     bottom: 4px;
-    left: 21px;
+    left: 23px;
 }
 
 img.slider_navigation.hover:hover {
@@ -138,13 +141,13 @@ img.slider_navigation.hover:hover {
 img.phone.vertical {
     position: relative;
     right: 13px;
-    bottom: 4px;
+    bottom: 3px;
 }
 
 img.phone.horizontal {
     position: relative;
     left: 14px;
-    bottom: 4px;
+    bottom: 3px;
 }
 
 section.services {
@@ -196,7 +199,7 @@ section.services {
     margin-right: 20px;
     justify-content: center;
     position: relative;
-    top: 2px;
+    top: 1px;
     left: 0px;
 }
 .icon {
@@ -215,7 +218,7 @@ section.services {
     text-align: justify;
     overflow: hidden;
     letter-spacing: 0px;
-    top: 8px;
+    top: 6px;
     position: relative;
     max-width: 220px;
     left: 1px;
@@ -228,9 +231,22 @@ section.services {
     color: #666d89;
     margin: -5px 0px 4px 0px;
     position: relative;
-    top: 3px;
+    top: 2px;
     left: 1px;
     font-family: 'Lato Black', sans-serif;
     letter-spacing: -0.1px;
 }
 
+ul.nav_menu li::after {
+    content: "·";
+    color: #494e62;
+    margin: 0px 9.25px;
+    position: relative;
+    left: 3px;
+    top: 0px;
+}
+
+ul.nav_menu li:last-child::after {
+    content: "";
+    margin: 0;
+}
