@@ -540,3 +540,97 @@ a.item-contact_link:hover {
 ul.footer_items img:hover {
     opacity: 0.5;
 }
+
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    top: 0;
+    z-index: 9999999;
+    position: sticky;
+}
+
+ul.nav_menu li a.active {
+    color: #eb5055;
+}
+
+img.phone_vertical_hidden {
+    position: relative;
+    right: 13px;
+    bottom: 3px;
+}
+
+img.phone_horizontal_hidden {
+    position: relative;
+    left: 14px;
+    bottom: 3px;
+}
+
+.portfolio_img img.active {
+    border: 5px solid #F06C64;
+}
+
+#massage-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#massage-block.massage-block-hidden {
+    display: none;
+}
+#massage {
+    position: fixed;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background: #f06c64;
+    border-radius: 175px;
+    align-items: center;
+    overflow: hidden;
+}
+.sucsses, .status {
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    margin: 15px 0px;
+}
+div#massage span {
+    color: #f7f3f3;
+    font-size: 16px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    max-height: 80px;
+}
+button#close-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+img.phone.vertical {
+    display: block;
+}
+
+img.sloder-img {
+    display: none;
+}

@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Singolo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <nav class="nav content">
                 <h1><a href="#">Singolo</a></h1>
-                <ul class="nav_menu">
-                    <li class="nav_menu-item active"><a class="nav_menu-link" href="#">Home</a> </li>
-                    <li class="nav_menu-item"><a class="nav_menu-link" href="#">Services</a> </li>
-                    <li class="nav_menu-item"><a class="nav_menu-link" href="#">Portfolio</a></li>
-                    <li class="nav_menu-item"><a class="nav_menu-link" href="#">About</a> </li>
-                    <li class="nav_menu-item"><a class="nav_menu-link" href="#">Contact</a> </li>
+                <ul class="nav_menu" id="menu">
+                    <li class="nav_menu-item"><a class="nav_menu-link active" href="#home">Home</a> </li>
+                    <li class="nav_menu-item"><a class="nav_menu-link" href="#services">Services</a> </li>
+                    <li class="nav_menu-item"><a class="nav_menu-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav_menu-item"><a class="nav_menu-link" href="#about">About</a> </li>
+                    <li class="nav_menu-item"><a class="nav_menu-link" href="#contact">Contact</a> </li>
                 </ul>
             </nav>
         </div>
@@ -24,14 +24,17 @@
     <main class="slider">
         <div class="container">
             <div class="slider_item content">      
-                    <img class="slider_navigation left hover" src="assets/img/prev.png" alt="">
-                    <img class="phone vertical" class="" src="assets/img/iPhone Vertical.png" alt="iPhone Vertical">
-                    <img class="phone horizontal" src="assets/img/iPhone Horizontal.png" alt="iPhone Horizontal">
+                    <img class="slider_navigation left hover"  src="assets/img/prev.png" alt="">
+                    <img class="phone vertical" src="assets/img/iPhone Vertical.png" alt="iPhone Vertical">
+                    <img class="phone_vertical_hidden" style="display: none;" src="assets/img/phone_vertical_black.png" alt="iPhone Vertical">
+                    <img class="phone horizontal"  src="assets/img/iPhone Horizontal.png" alt="iPhone Horizontal">
+                    <img class="sloder-img"  src="assets/img/component .png" alt="">
+                    <img class="phone_horizontal_hidden" style="display: none;" src="assets/img/phone_horizontal_black.png" alt="iPhone Vertical">
                     <img class="slider_navigation right hover" src="assets/img/next.png" alt="">
             </div>
         </div>
     </main>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services_info content">
                 <h2>Our Services</h2>
@@ -83,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio_content">
                 <h2 class="h2_text">Portfolio</h2>
@@ -96,22 +99,22 @@
                 <span class="tag_item">Artwork</span>
             </div>
             <div class="portfolio_img">
-                <img src="assets/img/Img1.png" alt="">
-                <img src="assets/img/Img2.png" alt="">
-                <img src="assets/img/Img3.png" alt="">
-                <img src="assets/img/Img4.png" alt="">
-                <img src="assets/img/Img5.png" alt="">
-                <img src="assets/img/Img6.png" alt="">
-                <img src="assets/img/Img7.png" alt="">
-                <img src="assets/img/Img8.png" alt="">
-                <img src="assets/img/Img9.png" alt="">
-                <img src="assets/img/Img10.png" alt="">
-                <img src="assets/img/Img11.png" alt="">
-                <img src="assets/img/Img12.png" alt="">
+                <img src="assets/img/Img1.png" alt="img">
+                <img src="assets/img/Img2.png" alt="img">
+                <img src="assets/img/Img3.png" alt="img">
+                <img src="assets/img/Img4.png" alt="img">
+                <img src="assets/img/Img5.png" alt="img">
+                <img src="assets/img/Img6.png" alt="img">
+                <img src="assets/img/Img7.png" alt="img">
+                <img src="assets/img/Img8.png" alt="img">
+                <img src="assets/img/Img9.png" alt="img">
+                <img src="assets/img/Img10.png" alt="img">
+                <img src="assets/img/Img11.png" alt="img">
+                <img src="assets/img/Img12.png" alt="img">
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about_content">
                 <h2 class="h2_text aboutus">About Us</h2>
@@ -153,20 +156,32 @@
                 </div>    
             </div>
     </section>
-    <section class="form">
+    <section class="form" id="contact">
         <div class="container">
             <div class="form_text">
                 <h2 class="h2_text">Get a Quote</h2>
                 <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="form_container">
-                <form class="main_form" action="">
-                    <input class="main_form_item" type="text" placeholder="Name (Required) " required="">
-                    <input class="main_form_item" type="email" placeholder="Email (Required)" required="">
-                    <input class="main_form_item" type="text" placeholder="Subject">
-                    <textarea class="main_form_item textarea" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                    <input class="main_form_item submit" type="submit" value="Submit">
+                <form class="main_form" id="form" action="">
+                    <input class="main_form_item" id="name" type="text" placeholder="Name (Required)" required>
+                    <input class="main_form_item" id="email" type="email" placeholder="Email (Required)" required>
+                    <input class="main_form_item" id="subject" type="text" placeholder="Subject" maxlength="20">
+                    <textarea class="main_form_item textarea" id="describe" maxlength="45" placeholder="Describe your project in detail..."></textarea>
+                    <input class="main_form_item submit" id="main-submit" type="submit" value="Submit">
                 </form>
+                <div id="massage-block" class="massage-block-hidden">
+                    <div id="massage">
+                        <p class="sucsses">Письмо отправлено</p>
+                        <p><span id="result-name"></span></p>
+                        <p><span id="result-email"></span></p>
+                        <p><span id="result-object"></span></p>
+                        <p><span id="result-describe"></span></p>
+                        <p class="status">Ok</p>
+                        <button id="close-btn">Ок</button>
+                    </div>
+                </div>
+
                 <div class="contact-info">
                     <h4 class="contact-info_text">Contact Information</h4>
                     <p class="contact-info_info">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
@@ -219,6 +234,8 @@
                 </ul>
             </div>
         </div>  
-    </footer>      
+    </footer>    
+
+    <script src="main.js"></script>  
 </body>
 </html>
